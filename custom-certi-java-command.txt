@@ -1,0 +1,8 @@
+Import certificate into Java cacerts
+keytool -import -alias neeraj -file "D:\mydocs\study stuff\key and trust generation\keystores\cert.cer" -keystore "C:\Program Files\Java\jdk1.8.0_92\jre\lib\security\cacerts" -storepass changeit
+
+Delete certicate from cacerts
+keytool -delete -alias neeraj -keystore "C:\Program Files\Java\jdk1.8.0_92\jre\lib\security\cacerts" -storepass changeit
+
+checking the certificate is installed or not
+keytool -list -v -keystore "C:\Program Files\Java\jdk1.8.0_92\jre\lib\security\cacerts" -alias neeraj
